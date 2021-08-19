@@ -19,7 +19,7 @@ The store contains all the metadata required, and currently is stored in sqlite3
 Internally, all objects are stored under a **persistent** primary key in the owner hierarchy.
 The choice of a persistent object was done to prevent requirements of knowing the owner
 hierarchy auth to use the PKCS11 token. Additionally, most TPMs will have an *SRK*
-provisionined here as well. This authorization value is usually owned by
+provisioned here as well. This authorization value is usually owned by
 an IT organization in enterprise environments. The auth value for this primary key
 is stored in the store on disk and is only protected with filesystem access controls. However,
 a typical Primary Key in the Owner Hierarchy has an empty password. Thus,
